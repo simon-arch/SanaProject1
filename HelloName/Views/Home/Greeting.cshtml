@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = $"Hello, {@ViewBag.Username}";
+}
+
+<div class="text-center">
+    <h1 class="display-3 mt-5">Hello,</h1>
+    <h1 class="display-6 mb-5 text-break">@ViewBag.Username!</h1>
+    <a href="@Url.Action("Index", "Home")" class="btn btn-dark">Home</a>
+</div>

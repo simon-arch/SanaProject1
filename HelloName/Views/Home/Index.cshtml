@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Name Prompt";
+}
+
+<div class="text-center">
+    <h1 class="display-3 mt-5">Welcome</h1>
+    <form action="@Url.Action("Greeting", "Home")" method="post">
+        <label class="display-6" for="name">Enter your name</label><br>
+        <div class="d-flex justify-content-center">
+            <input type="text" id="name" name="name" class="mt-5 mb-3 form-control w-25" required autocomplete="off" placeholder="Simon"/>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-dark"/>
+    </form>
+</div>
